@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:light_dark_mode_demo/provider/theme_provider.dart';
-import 'package:light_dark_mode_demo/widgets/widgets.dart';
+import 'package:light_dark_mode_demo/screens/screens.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           themeMode: themeProvider.themeMode,
           theme: MyThemes.lightTheme,
           darkTheme: MyThemes.darkTheme,
-          home: ProfileWidget(),
+          home: HomePage(),
         );
       },
     );
